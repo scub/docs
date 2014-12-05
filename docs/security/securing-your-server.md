@@ -230,7 +230,6 @@ Here's how to create a firewall on your Linode:
         ~~~
 
 
-
 5.  Edit the rules as necessary. By default, the rules will allow traffic to the following services and ports: HTTP (80), HTTPS (443), SSH (22), and ping. All other ports will be blocked.
 
     {: .note }
@@ -242,7 +241,7 @@ Here's how to create a firewall on your Linode:
     {: .file-excerpt}
     /etc/iptables.firewall.rules
     :   ~~~
-        #  Allow incoming Longview connections 
+        #  Allow incoming Longview connections
         -A INPUT -s longview.linode.com -j ACCEPT
 
         # Allow metrics to be provided Longview
@@ -280,7 +279,7 @@ Here's how to create a firewall on your Linode:
 
             Chain OUTPUT (policy ACCEPT)
             target     prot opt source               destination
-            ACCEPT     all  --  anywhere             anywhere  
+            ACCEPT     all  --  anywhere             anywhere
 
 11. Now you need to ensure that the firewall rules are activated every time you restart your Linode.
 

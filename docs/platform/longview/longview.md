@@ -235,7 +235,7 @@ If your Linode has a firewall, it will need to allow communication with Longview
 
 2. In order for your Linode to provide its metrics to Longview you will want to allow the same address through the OUTPUT chain of your Firewall.
 
-        iptables -I OUTPUT -d longview.linode.com -j ACCEPT 
+        iptables -I OUTPUT -d longview.linode.com -j ACCEPT
 
 If you followed the instructions for setting up a firewall in our [Securing Your Server](/docs/security/securing-your-server) guide, go back to [this section](/docs/security/securing-your-server#step_6) to find additional rules for Longview.
 
@@ -404,7 +404,7 @@ If you're experiencing problems with the Longview client application, please per
 
     **Debian/Ubuntu:** :
 
-        /etc/init.d/longview debug 
+        /etc/init.d/longview debug
 
     **Fedora/CentOS:** :
 
